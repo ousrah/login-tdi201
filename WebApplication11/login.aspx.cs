@@ -18,7 +18,7 @@ namespace WebApplication11
         {
             SqlConnection cn = new SqlConnection(@"data source=.\sqlexpress;initial catalog=librairie;user id=sa; password=P@ssw0rd");
             cn.Open();
-            SqlCommand cmd = new SqlCommand("select * from [user] where email = @email", cn);
+            SqlCommand cmd = new SqlCommand("select * from [user] where valide=1 and email = @email", cn);
             cmd.Parameters.AddWithValue("@email", txtLogin.Text);
             SqlDataReader dr = cmd.ExecuteReader();
             bool flag = false;

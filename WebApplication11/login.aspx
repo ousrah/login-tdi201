@@ -9,8 +9,8 @@
     <style>
 
         #login{
-            width:300px;
-            height:300px;
+            width:400px;
+            height:400px;
             margin:auto;
             margin-top:200px;
             border: solid 2px black;
@@ -57,6 +57,8 @@
                     <tr>
                         <td colspan="3">
                             <asp:Button ID="btnConnection" runat="server" Text="Connection" OnClick="btnConnection_Click" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/inscription.aspx">Inscription</asp:HyperLink>
                         </td>
                     </tr>
                 </table>
