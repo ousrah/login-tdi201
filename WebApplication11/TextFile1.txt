@@ -1,4 +1,8 @@
-﻿1 - validation d'inscription par email et hash
+﻿chemin pour les cookies
+
+C:\Users\"username"\AppData\Local\Google\Chrome\User Data\Default\Network
+
+1 - validation d'inscription par email et hash
 2 - utilisation des mot de passes hashés au niveau de la bd
 3 - système de recupération de mot de passe (mot de passe oublié)
 4 - ajouter une solution pour garder la session ouverte meme si on eteind le PC
