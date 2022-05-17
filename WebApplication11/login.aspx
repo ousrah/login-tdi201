@@ -61,9 +61,18 @@
                             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/inscription.aspx">Inscription</asp:HyperLink>
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:CheckBox ID="chkConnexion" runat="server" Text="Garder ma session ouverte" />
+                        </td>
+                    </tr>
                 </table>
                 <br />
+                <br />
                 <asp:Label ID="lblErrConnection" runat="server" ForeColor="#FF3300" Text="Login ou mot de passe incorrect" Visible="False"></asp:Label>
+                <br />
+                <br />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="getMac" ValidationGroup="a" />
             </div>
 
 

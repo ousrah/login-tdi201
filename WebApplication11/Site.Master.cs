@@ -18,6 +18,22 @@ namespace WebApplication11
             }
             else
                 Response.Redirect("login.aspx");
-        } 
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            HttpCookie c = Request.Cookies["ismo"];
+            if (c != null)
+            {
+                c["a"] = "";
+                c["b"] = "";
+                c["c"] = "";
+                c.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(c);
+
+                Session["passport"] = "";
+                Response.Redirect("login.aspx");
+            }
+                    }
     }
 }

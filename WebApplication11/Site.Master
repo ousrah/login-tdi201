@@ -54,6 +54,10 @@
                         <li><a runat="server" href="~/">Accueil</a></li>
                         <li><a runat="server" href="~/About">À propos de</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
+                         <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Se déconnecter</asp:LinkButton>
+                             </li>
+
                     </ul>
                 </div>
             </div>
@@ -64,6 +68,7 @@
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Mon ASP.NET Application</p>
+                
             </footer>
         </div>
 
