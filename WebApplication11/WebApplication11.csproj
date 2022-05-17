@@ -157,6 +157,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TestApplication.aspx" />
+    <Content Include="TestCookies.aspx" />
+    <Content Include="TestSession.aspx" />
     <Content Include="validationInscription.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -225,6 +228,27 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestApplication.aspx.cs">
+      <DependentUpon>TestApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestApplication.aspx.designer.cs">
+      <DependentUpon>TestApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestCookies.aspx.cs">
+      <DependentUpon>TestCookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestCookies.aspx.designer.cs">
+      <DependentUpon>TestCookies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestSession.aspx.cs">
+      <DependentUpon>TestSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestSession.aspx.designer.cs">
+      <DependentUpon>TestSession.aspx</DependentUpon>
     </Compile>
     <Compile Include="validationInscription.aspx.cs">
       <DependentUpon>validationInscription.aspx</DependentUpon>
